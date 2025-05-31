@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waka.INC</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">
+                <h1><a href="#home">Waka<span>INC.</span></a></h1>
+            </div>
+
+            <div class="visitorUserName">
+                <h2 id="visitor">(GUEST)</h2>
+            </div>
+
+            <div class="navLinks">
+                <ul>
+                    <li onclick="setActiveLink(this)"><a href="#home">Home</a></li>
+                    <li onclick="setActiveLink(this)"><a href="#about">About</a></li>
+                    <li onclick="setActiveLink(this)"><a href="#contact">Contact</a></li>
+                    <li onclick="setActiveLink(this)"><a href="#page">Page</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navChildLink">
+            <div class="home" id="home">
+                <div class="content">
+                    <h1>Welcome to <span>Home Base.</span></h1>
+                    <h3>a glimpse into coding and much more..</h3>
+                </div>
+                <div class="more">
+                    <button class="download">Download</button>
+                    <button class="review">Review</button>
+                </div>
+            </div>
+
+            <div class="about" id="about">
+                <h1>About <span>WakaINC.</span></h1>
+                <h3>Our Mission</h3>
+                <p>
+                    Waka.INC is a platform that provides various coding resources, tutorials,and  <br>
+                    tools to help developers enhance their skills and build amazing projects.
+                </p>
+            </div>
+    
+            <div class="contact" id="contact">
+                <h1>Contact Info</h1>
+                <h3>Get in Touch</h3>
+                <form action="">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <div class="page" id="page">
+                <h1>Page Insights</h1>
+                <h3>Page visits data</h3>
+                <div class="visitorList">
+                    <div class="visitorDiv">
+                        <p class="userName">Visitor 1</p>
+                        <p class="timeSpent">3:00:00</p>
+                        <p class="visitDate">2023/10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="userNameCollector">
+        <h3>Enter your name to continue</h3>
+        <input type="text" id="userNameInput" placeholder="Enter your name">
+        <button id="submitUserName">Submit</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
