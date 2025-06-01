@@ -68,6 +68,34 @@ body{
     text-decoration: none;
 }
 
+.visitCount {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 16px;
+    font-size: 16px;
+    color: #6d7174;
+    font-weight: 600;
+    background: #f5faff;
+    border-radius: 16px;
+    height: 40px;
+    margin-left: 12px;
+    gap: 8px;
+}
+
+.visitCount i {
+    color: #5c5cff;
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+.visitCount span {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+}
+
 .links{
     width: auto;
     height: 100%;
@@ -454,4 +482,12 @@ form button:hover{
 }
 .contact-info li a:active{
     color: #000000;
+}
+
+.visitCount{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
